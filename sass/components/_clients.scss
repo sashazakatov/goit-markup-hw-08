@@ -1,0 +1,27 @@
+.clients{
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    &__link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        transition-property: fill, border-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        
+        fill: $pramary-icon-color;
+        
+        width: 170px;
+        height: 92px;
+        
+        border: 1px solid #AFB1B8;
+        border-radius: 4px;
+    }
+    &__link:hover,
+    &__link:focus {
+        border-color: $company-color;
+        fill: $company-color;
+    }
+}

@@ -1,0 +1,23 @@
+body {
+    color: $pramiry-color;
+    background-color: $background-color;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+
+    letter-spacing: 0.03em;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+    margin: 0px;
+    padding: 0px;
+}

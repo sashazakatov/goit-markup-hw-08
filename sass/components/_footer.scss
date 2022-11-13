@@ -1,0 +1,89 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #2F303A;
+
+    &__container{
+        display: flex;
+        align-items: baseline;
+    }
+    &__list{
+        display: block;
+    }
+    &__item{
+        margin-bottom: 9px;
+    }
+    &__text{
+        color: #fff;
+        font-style: inherit;
+        font-style: normal;
+    }
+    &__link-social{
+        background-color: rgba(255, 255, 255, 0.1);
+        fill: #fff;
+    }
+    &__contact{
+        justify-content: center;
+        align-items: baseline;
+        color: rgba(255, 255, 255, 0.6);
+            
+        font-weight: 400;
+        line-height: 1.7;
+        letter-spacing: 0.03em;
+    }
+    &__logo{
+        display: block;
+        margin-bottom: 20px;
+        color: #fff;
+    }
+    &__title{
+        margin-bottom: 20px;
+            
+        color: #fff;
+            
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    }
+    &__social{
+        margin-left: 70px;
+    }
+    &__subscription{
+        margin-left: 117px;
+    }
+    &__form{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    &__input{
+        color: #fff;
+        
+        padding: 11px;
+        
+        background-color: #2F303A;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        
+        outline: none;
+        border-radius: 4px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        
+        width: 358px;
+        height: 50px;
+    }
+    &__button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 12px;
+        
+        width: 200px;
+        height: 50px;
+    }
+    &__icon{
+        margin-left: 10px;
+        fill: #fff;
+    }
+}

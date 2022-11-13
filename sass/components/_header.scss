@@ -1,0 +1,102 @@
+.header {
+    border-bottom: 1px solid #ECECEC;
+
+    &__flex{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__nav{
+        display: flex;
+        align-items: center;
+        gap: 93px;
+    }
+    &__list{
+        gap: 50px;
+    }
+    &__link{
+        position: relative;
+            
+        padding-top: 33px;
+        padding-bottom: 31px;
+            
+        color: $secondory-color;
+            
+        font-weight: 500;
+            
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+    }
+    &__link::after{
+        display: block;
+        position: absolute;
+        bottom: 0px;
+            
+        transform: scaleX(0);
+        transition-property: transform;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            
+        background-color: $company-color;
+            
+        border-radius: 2px;
+        width: 100%;
+        height: 4px;
+        content: '';
+
+    }
+    &__link:hover::after,
+    &__link:focus::after{
+        transform: scaleX(1);
+    }
+    &__link--active{
+        position: relative;
+
+        padding-top: 33px;
+        padding-bottom: 31px;
+        
+        font-weight: 500;
+                
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        
+        color: $company-color;
+    }
+    &__link--active::after{
+        display: block;
+        position: absolute;
+        bottom: 0px;
+
+
+        background-color: $company-color;
+        
+        border-radius: 2px;
+        width: 100%;
+        height: 4px;
+        content: '';
+    }
+    &__logo{
+        padding-top: 24px;
+        padding-bottom: 25px;
+    }
+    &__list-contact{
+        // align-items: baseline;
+        gap: 50px;
+        fill: currentColor;
+            
+        // padding-top: 33px;
+        // padding-bottom: 31px;
+            
+        font-weight: 500;
+            
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+    }
+    &__contact{
+        display: flex;
+        padding-top: 33px;
+        padding-bottom: 31px;
+
+        gap: 10px;
+    }
+}

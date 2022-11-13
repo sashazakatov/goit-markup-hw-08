@@ -1,0 +1,7 @@
+.list-cards{
+    gap: 30px;
+    align-items: baseline;
+    &__card{
+        flex-basis: 270px;
+    }
+}

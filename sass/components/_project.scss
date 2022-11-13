@@ -1,0 +1,115 @@
+.project{
+    padding-top: 94px;
+    padding-bottom: 94px;
+    &__list-button{
+        gap: 8px;
+        margin-bottom: 56px;
+    }
+    &__button {
+        transition-property: background-color, box-shadow;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        color: $secondory-button-color;
+        background-color: $secondory-button-background-color;
+
+        background-color: #F5F4FA;
+        border-radius: 4px;
+        padding: 6px 22px;
+        border: none;
+    }
+    &__button-text {
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.6;
+        
+        text-align: center;
+        letter-spacing: 0.03em;
+        
+        color: #212121;
+    }
+    &__button:hover,
+    &__button:focus{
+        background-color: $pramiry-button-background-color;
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+    &__button:hover &__button-text,
+    &__button:focus &__button-text{
+        color: $pramiry-button-color;
+    }
+    &__card{
+        position: relative;
+        overflow: hidden;
+        transition-property: box-shadow;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            
+        background-color: $background-color;
+        border: 1px solid #EEEEEE;
+        width: 370px;
+    }
+    &__card:focus,
+    &__card:hover{
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+    &__link{
+        overflow: hidden;
+        text-decoration: none;
+    }
+    &__description{
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        transform: translateY(100%);
+        transition-property: transform;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            
+        background-color: rgba(33, 150, 243, 0.9);
+    }
+    &__description-text{
+        font-size: 18px;
+        line-height: 1.55em;
+        
+        letter-spacing: 0.03em;
+        
+        color: #FFFFFF;
+        
+        margin: 63px 24px;
+    }
+    &__link:hover &__description,
+    &__link:focus &__description {
+        transform: translateY(0%);
+    }
+    &__text{
+        position: relative;
+        z-index: 1;
+        padding: 20px 24px;
+        border: 1px solid #EEEEEE;
+        background-color: $background-color;
+    }
+    &__title{
+        margin-bottom: 4px;
+        color: $secondory-button-color;
+    
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2;
+    
+        letter-spacing: 0.06em
+    }
+    &__subtitle{
+        color: $pramiry-color;
+        
+        font-size: 16px;
+        
+        line-height: 1.8;
+        letter-spacing: 0.03em;
+    }
+}
