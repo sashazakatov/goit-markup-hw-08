@@ -1,15 +1,25 @@
-$pramary-icon-color:#AFB1B8;
-$secondery-icon-color:#fff;
-$pramary-ivon-color-bottom:rgba(255, 255, 255, 0.1);
+:root{
+    --shadow-color:rgba(0, 0, 0, 0.15);
+    --backdor-color:rgba(0, 0, 0, 0.2);
+    --animation-time: 250ms;
+    //функция bezier для анимаци
+    --bezier-function:cubic-bezier(0.4, 0, 0.2, 1);
 
-$background-color: #FFF;
-$pramiry-color: #757575;
-$secondory-color:#212121;
-$company-color:#2196F3;
-
-$footer-contact-color: rgba(255, 255, 255, 0.6);
-
-$pramiry-button-color: #fff;
-$secondory-button-color: #212121;
-$pramiry-button-background-color: #2196F3;
-$secondory-button-background-color: #F5F4FA;
+    --pramary-icon-color: #afb1b8;
+    --secondery-icon-color: #fff;
+    --pramary-ivon-color-bottom: rgba(255, 255, 255, 0.1);
+    
+    --background-color: #fff;
+    --pramiry-color: #757575;
+    //--secondory-color-title
+    --secondory-color: #212121;
+    --secondory-color-title:#fff;
+    --company-color: #2196F3;
+    
+    --footer-contact-color: rgba(255, 255, 255, 0.6);
+    
+    --pramiry-button-color: #fff;
+    --secondory-button-color: #212121;
+    --pramiry-button-background-color: #2196F3;
+    --secondory-button-background-color: #f5f4fa;
+}

@@ -10,6 +10,6 @@
 
     text-decoration: none;
     &__cover {
-        color: $company-color;
+        color: var(--company-color);
     }
 }

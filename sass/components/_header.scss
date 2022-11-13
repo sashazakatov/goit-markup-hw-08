@@ -20,7 +20,7 @@
         padding-top: 33px;
         padding-bottom: 31px;
             
-        color: $secondory-color;
+        color: var(--secondory-color);
             
         font-weight: 500;
             
@@ -37,7 +37,7 @@
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
             
-        background-color: $company-color;
+        background-color: var(--company-color);
             
         border-radius: 2px;
         width: 100%;
@@ -60,7 +60,7 @@
         line-height: 1.14;
         letter-spacing: 0.02em;
         
-        color: $company-color;
+        color: var(--company-color);
     }
     &__link--active::after{
         display: block;
@@ -68,7 +68,7 @@
         bottom: 0px;
 
 
-        background-color: $company-color;
+        background-color: var(--company-color);
         
         border-radius: 2px;
         width: 100%;

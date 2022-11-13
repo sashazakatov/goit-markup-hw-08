@@ -2,8 +2,8 @@
     position: absolute;
 
     transition-property: border-color, visibility;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: var(--animation-time);
+    transition-timing-function: var(--bezier-function);
 
     top: 50%;
     left: 50%;
@@ -15,7 +15,7 @@
     width: 528px;
     height: 581px;
 
-    background-color: $background-color;
+    background-color: var(--background-color);
 
     &__form{
         margin: 40px;
@@ -37,17 +37,17 @@
     &__input{
         cursor: pointer;
         transition-property: border-color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: var(--animation-time);
+        transition-timing-function: var(--bezier-function);
     }
     &__input:hover,
     &__input:focus {
-        border-color: $company-color;
+        border-color: var(--company-color);
     }
     &__icon{
         transition-property: fill;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: var(--animation-time);
+        transition-timing-function: var(--bezier-function);
         
         position: absolute;
         left: 12px;
@@ -57,10 +57,10 @@
     }
     &__input:hover ~ &__icon,
     &__input:focus ~ &__icon {
-        fill: $company-color;
+        fill: var(--company-color);
     }
     &__link {
-        color: $company-color;
+        color: var(--company-color);
         cursor: pointer;
     }
     &__buttom {
@@ -94,11 +94,11 @@
         top: 8px;
         width: 30px;
         height: 30px;
-        background-color: $background-color;
+        background-color: var(--background-color);
         cursor: pointer;
     }
     &__button-close:hover, 
     &__button-close:focus {
-        fill: $company-color;
+        fill: var(--company-color);
     }
 }

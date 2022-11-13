@@ -9,9 +9,9 @@
         
         transition-property: fill, border-color;
         transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-timing-function: var(--bezier-function);
         
-        fill: $pramary-icon-color;
+        fill: var(--pramary-icon-color);
         
         width: 170px;
         height: 92px;
@@ -21,7 +21,7 @@
     }
     &__link:hover,
     &__link:focus {
-        border-color: $company-color;
-        fill: $company-color;
+        border-color: var(--company-color);
+        fill: var(--company-color);
     }
 }

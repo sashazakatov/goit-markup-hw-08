@@ -1,8 +1,8 @@
 .link-social{
     transition-property: fill, background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    fill: $pramary-icon-color;
+    transition-duration: var(--animation-time);
+    transition-timing-function: var(--bezier-function);
+    fill: var(--pramary-icon-color);
     display: flex;
     width: 44px;
     height: 44px;
@@ -13,7 +13,7 @@
 
     &:hover,
     &:focus{
-        background-color: $company-color;
-        fill: $secondery-icon-color;
+        background-color: var(--company-color);
+        fill: var(--secondery-icon-color);
         }
 }

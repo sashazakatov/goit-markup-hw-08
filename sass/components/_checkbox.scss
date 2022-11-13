@@ -2,11 +2,11 @@
     position: relative;
     &__icon {
         position: absolute;
-        border: 2px solid $secondory-color;
+        border: 2px solid var(--secondory-color);
         border-radius: 4px;
     }
     &__input:checked + &__icon {
-            background-color: $company-color;
+            background-color: var(--company-color);
             border: none;
         }
 }
