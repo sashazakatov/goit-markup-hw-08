@@ -1,18 +1,17 @@
 .features {
     padding-top: 94px;
     padding-bottom: 0px;
+    @media screen and (max-width:1199px) {
+        padding-top: 30px;
+        padding-bottom: 60px;
+    }
+    
     &__icon{
         display: flex;
         justify-content: center;
         align-items: center;
-        
-        margin-bottom: 30px;
-        
-        width: 270px;
-        height: 120px;
-        
-        background: #F5F4FA;
-        border-radius: 4px;
+        height: auto;
+        margin-bottom: 55px;
     }
     &__title{
         margin-bottom: 10px;
@@ -25,8 +24,11 @@
         line-height: 1.14;
         letter-spacing: 0.03em;
         text-transform: uppercase;
+        @media screen and(max-width: 768px) {
+            text-align: center;
+        }
     }
     &__text{
-        line-height: 1.71em;
+        line-height: 1.71;
     }
 }

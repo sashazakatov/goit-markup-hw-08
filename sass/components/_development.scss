@@ -1,6 +1,10 @@
 .development {
     padding-top: 94px;
     padding-bottom: 94px;
+
+    @media screen and (max-width:1199px) {
+        display: none;
+    }
     &__item{
         position: relative;
     }
