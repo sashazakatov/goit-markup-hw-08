@@ -41,6 +41,9 @@
     &__button:focus &__button-text{
         color: var(--pramiry-button-color);
     }
+    &__list-cards{
+        flex-wrap: wrap;
+    }
     &__card{
         position: relative;
         overflow: hidden;
@@ -50,7 +53,12 @@
             
         background-color: var(--background-color);
         border: 1px solid #EEEEEE;
-        width: 370px;
+        @media screen and (min-width:768px) {
+            width: calc((100% - 30px)/2);
+        }    
+        @media screen and (min-width:1200px) {
+            width: calc((100% - 60px)/3);
+        }
     }
     &__card:focus,
     &__card:hover{
@@ -74,6 +82,7 @@
         background-color: rgba(33, 150, 243, 0.9);
     }
     &__description-text{
+        display: block;
         font-size: 18px;
         line-height: 1.55em;
         
@@ -82,6 +91,12 @@
         color: #FFFFFF;
         
         margin: 63px 24px;
+        @media screen and (max-width: 767px) {
+            margin: 77px 24px;
+        }
+        @media screen and (max-width: 1199px) {
+            margin: 49px 24px;
+        }
     }
     &__link:hover &__description,
     &__link:focus &__description {

@@ -1,18 +1,32 @@
 .header {
     border-bottom: 1px solid #ECECEC;
 
-    &__flex{
-        display: flex;
+    &__flex{ 
         align-items: center;
         justify-content: space-between;
+        @media screen and (min-width:768px) {
+            display: flex;
+        }
     }
     &__nav{
         display: flex;
         align-items: center;
-        gap: 93px;
+        @media screen and (max-width: 767px) {
+            justify-content: space-between;
+        }
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            gap: 88px;
+        }
+        @media screen and (min-width: 1200px){
+            gap: 93px;
+        }
     }
     &__list{
+        display: none;
         gap: 50px;
+        @media screen and (min-width: 768px){
+            display: flex;
+        }
     }
     &__link{
         position: relative;
@@ -78,25 +92,36 @@
     &__logo{
         padding-top: 24px;
         padding-bottom: 25px;
+        @media screen and (max-width: 767px) {
+            padding: 16px 0;
+        }
     }
     &__list-contact{
-        // align-items: baseline;
-        gap: 50px;
-        fill: currentColor;
-            
-        // padding-top: 33px;
-        // padding-bottom: 31px;
+        display: none;
+        align-items: baseline;
+        fill: currentColor;       
             
         font-weight: 500;
             
         line-height: 1.14;
         letter-spacing: 0.02em;
+
+        gap:10px;
+        @media screen and (min-width: 768px) and (max-width: 1199px){
+            display: block;
+        }
+        @media screen and (min-width: 1200px){
+            display: flex;
+        }
     }
     &__contact{
         display: flex;
+        align-items: center;
         padding-top: 33px;
         padding-bottom: 31px;
-
         gap: 10px;
+        @media screen and (min-width: 768px) and (max-width:1199px) {
+            padding: 5px 0px;
+        }
     }
 }

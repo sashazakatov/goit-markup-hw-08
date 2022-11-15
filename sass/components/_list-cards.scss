@@ -8,9 +8,6 @@
         flex-wrap: nowrap;
     }
     &__card{
-        @media screen and (max-width: 479px) {
-            margin-bottom: 30px;
-        }
         @media screen and (min-width:768px) {
             width:calc((100% - 30px)/2);
         }

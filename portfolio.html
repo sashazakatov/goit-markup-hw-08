@@ -20,13 +20,21 @@
     <title>Portfolio</title>
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container">
         <div class="header__flex">
           <nav class="header__nav">
             <a class="logo header__logo" href="./index.html"
               ><span class="logo__cover">Web</span>Studio</a
             >
+            <button class="menu-button js-open-menu" type="button">
+              <svg width="40" height="40" aria-label="">
+                <use
+                  class="menu-button__icon menu-button__menu"
+                  href="./images/icons.svg#menu-icon"
+                ></use>
+              </svg>
+            </button>
             <ul class="list header__list">
               <li>
                 <a class="link header__link" href="./index.html">Студія</a>
@@ -41,15 +49,15 @@
           </nav>
           <ul class="list header__list-contact">
             <li>
-              <a class="link contact header__contact" href="mailto:info@devstudio.com"
-                ><svg width="16" height="12">
+              <a class="link contact header__contact" href="mailto:info@devstudio.com">
+                <svg width="16" height="12">
                   <use href="./images/icons.svg#envelope"></use></svg
-                >info@devstudio.com</a
-              >
+                >info@devstudio.com
+              </a>
             </li>
             <li>
-              <a class="link contact header__contact" href="tel:+380961111111"
-                ><svg width="10" height="16">
+              <a class="link contact header__contact" href="tel:+380961111111">
+                <svg width="10" height="16">
                   <use class="icon" href="./images/icons.svg#smartphone"></use></svg
                 >+38 096 111 11 11</a
               >
@@ -57,7 +65,7 @@
           </ul>
         </div>
       </div>
-    </header> -->
+    </header>
     <main>
       <section class="project">
         <div class="container">
@@ -89,15 +97,26 @@
               </button>
             </li>
           </ul>
-          <ul class="">
+          <ul class="list project__list-cards">
             <li class="project__card">
               <a class="project__link" href="">
-                <img
-                  src="./images/8.jpg"
-                  alt="Два хлопця грають у баскетбол"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    src="./images/technokrac.webp"
+                    srcset="./images/technokrac.webp 1x, ./images/technokrac@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    src="./images/technokrac.jpg"
+                    srcset="./images/technokrac.jpg 1x, ./images/technokrac@2x.jpg 2x"
+                    type="image/jpeg"
+                  />
+                  <img
+                    src="./images/technokrac.jpg"
+                    alt="чоловік у червоній сорочці на білому тлі"
+                    width="370px"
+                  />
+                </picture>
                 <div class="project__text">
                   <h2 class="project__title">Технокряк</h2>
                   <span class="project__subtitle">Веб-сайт</span>
@@ -113,12 +132,23 @@
             </li>
             <li class="project__card">
               <a class="project__link" href="">
-                <img
-                  src="./images/9.jpg"
-                  alt="Два хлопця грають у баскетбол"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    src="./images/new_orlean_golden_star.webp"
+                    srcset="./images/new_orlean_golden_star.webp 1x, ./images/technokrac@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    src="./images/new_orlean_golden_star.jpg"
+                    srcset="./images/new_orlean_golden_star.jpg 1x, ./images/technokrac@2x.jpg 2x"
+                    type="image/jpeg"
+                  />
+                  <img
+                    src="./images/new_orlean_golden_star.jpg"
+                    alt="чоловік у червоній сорочці на білому тлі"
+                    width="370px"
+                  />
+                </picture>
                 <div class="project__text">
                   <h2 class="project__title">Ресторан Seafood</h2>
                   <span class="project__subtitle">Додаток</span>
@@ -134,12 +164,23 @@
             </li>
             <li class="project__card">
               <a class="project__link" href="">
-                <img
-                  src="./images/10.jpg"
-                  alt="Два хлопця грають у баскетбол"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    src="./images/seafood.webp"
+                    srcset="./images/seafood.webp 1x, ./images/seafood@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    src="./images/seafood.jpg"
+                    srcset="./images/seafood.jpg 1x, ./images/seafood@2x.jpg 2x"
+                    type="image/jpeg"
+                  />
+                  <img
+                    src="./images/seafood.jpg"
+                    alt="чоловік у червоній сорочці на білому тлі"
+                    width="370px"
+                  />
+                </picture>
                 <div class="project__text">
                   <h2 class="project__title">Ресторан Seafood</h2>
                   <span class="project__subtitle">Додаток</span>
@@ -155,12 +196,23 @@
             </li>
             <li class="project__card">
               <a class="project__link" href="">
-                <img
-                  src="./images/11.jpg"
-                  alt="Два хлопця грають у баскетбол"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    src="./images/prime.webp"
+                    srcset="./images/prime.webp 1x, ./images/seafood@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    src="./images/prime.jpg"
+                    srcset="./images/prime.jpg 1x, ./images/seafood@2x.jpg 2x"
+                    type="image/jpeg"
+                  />
+                  <img
+                    src="./images/prime.jpg"
+                    alt="чоловік у червоній сорочці на білому тлі"
+                    width="370px"
+                  />
+                </picture>
                 <div class="project__text">
                   <h2 class="project__title">Проєкт Prime</h2>
                   <span class="project__subtitle">Маркетинг</span>
@@ -176,12 +228,23 @@
             </li>
             <li class="project__card">
               <a class="project__link" href="">
-                <img
-                  src="./images/12.jpg"
-                  alt="Два хлопця грають у баскетбол"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    src="./images/boxes.webp"
+                    srcset="./images/boxes.webp 1x, ./images/prime@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    src="./images/boxes.jpg"
+                    srcset="./images/boxes.jpg 1x, ./images/prime@2x.jpg 2x"
+                    type="image/jpeg"
+                  />
+                  <img
+                    src="./images/boxes.jpg"
+                    alt="чоловік у червоній сорочці на білому тлі"
+                    width="370px"
+                  />
+                </picture>
                 <div class="project__text">
                   <h2 class="project__title">Проєкт Boxes</h2>
                   <span class="project__subtitle">Додаток</span>
@@ -197,12 +260,23 @@
             </li>
             <li class="project__card">
               <a class="project__link" href="">
-                <img
-                  src="./images/13.jpg"
-                  alt="Два хлопця грають у баскетбол"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    src="./images/inspiration_has_borders.webp"
+                    srcset="./images/inspiration_has_borders.webp 1x, ./images/boxes@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    src="./images/inspiration_has_borders.jpg"
+                    srcset="./images/inspiration_has_borders.jpg 1x, ./images/boxes@2x.jpg 2x"
+                    type="image/jpeg"
+                  />
+                  <img
+                    src="./images/inspiration_has_borders.jpg"
+                    alt="чоловік у червоній сорочці на білому тлі"
+                    width="370px"
+                  />
+                </picture>
                 <div class="project__text">
                   <h2 class="project__title">Inspiration has no Borders</h2>
                   <span class="project__subtitle">Веб-сайт</span>
@@ -218,12 +292,23 @@
             </li>
             <li class="project__card">
               <a class="project__link" href="">
-                <img
-                  src="./images/14.jpg"
-                  alt="Два хлопця грають у баскетбол"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    src="./images/limited_edition.webp"
+                    srcset="./images/limited_edition.webp 1x, ./images/limited_edition@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    src="./images/limited_edition.jpg"
+                    srcset="./images/limited_edition.jpg 1x, ./images/limited_edition@2x.jpg 2x"
+                    type="image/jpeg"
+                  />
+                  <img
+                    src="./images/limited_edition.jpg"
+                    alt="чоловік у червоній сорочці на білому тлі"
+                    width="370px"
+                  />
+                </picture>
                 <div class="project__text">
                   <h2 class="project__title">Видання Limited Edition</h2>
                   <span class="project__subtitle">Дизайнг</span>
@@ -239,12 +324,23 @@
             </li>
             <li class="project__card">
               <a class="project__link" href="">
-                <img
-                  src="./images/15.jpg"
-                  alt="Два хлопця грають у баскетбол"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    src="./images/lab.webp"
+                    srcset="./images/lab.webp 1x, ./images/limited_edition@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    src="./images/lab.jpg"
+                    srcset="./images/lab.jpg 1x, ./images/limited_edition@2x.jpg 2x"
+                    type="image/jpeg"
+                  />
+                  <img
+                    src="./images/lab.jpg"
+                    alt="чоловік у червоній сорочці на білому тлі"
+                    width="370px"
+                  />
+                </picture>
                 <div class="project__text">
                   <h2 class="project__title">Проєкт LAB</h2>
                   <span class="project__subtitle">Маркетинг</span>
@@ -260,12 +356,23 @@
             </li>
             <li class="project__card">
               <a class="project__link" href="">
-                <img
-                  src="./images/16.jpg"
-                  alt="Два хлопця грають у баскетбол"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    src="./images/growing_business.webp"
+                    srcset="./images/growing_business.webp 1x, ./images/lab@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    src="./images/growing_business.jpg"
+                    srcset="./images/growing_business.jpg 1x, ./images/lab@2x.jpg 2x"
+                    type="image/jpeg"
+                  />
+                  <img
+                    src="./images/growing_business.jpg"
+                    alt="чоловік у червоній сорочці на білому тлі"
+                    width="370px"
+                  />
+                </picture>
                 <div class="project__text">
                   <h2 class="project__title">Growing Business</h2>
                   <span class="project__subtitle">Додаток</span>
@@ -350,5 +457,14 @@
         </div>
       </div>
     </footer> -->
+    <div class="mobile-menu js-menu-container">
+      <div class="container">
+        <button class="menu-button js-close-menu">
+          <svg class="menu-button__icon menu-button__close" width="40" height="40">
+            <use href="./images/icons.svg#close-icon"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
   </body>
 </html>

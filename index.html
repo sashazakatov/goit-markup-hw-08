@@ -20,11 +20,16 @@
     <title>Web Studio</title>
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container">
         <div class="header__flex">
             <nav class="header__nav">
               <a class="logo header__logo" href="./index.html"><span class="logo__cover">Web</span>Studio</a>
+              <button class="menu-button js-open-menu" type="button">
+                <svg width="40" height="40" aria-label="">
+                  <use class="menu-button__icon menu-button__menu" href="./images/icons.svg#menu-icon"></use>
+                </svg>
+              </button>
                 <ul class="list header__list">
                   <li>
                     <a class="link header__link--active" href="./index.html">Студія</a>
@@ -40,30 +45,30 @@
             <ul class="list header__list-contact">
               <li>
                 <a class="link contact header__contact" href="mailto:info@devstudio.com">
-                    <svg width="16" height="12">
+                  <svg width="16" height="12">
                     <use href="./images/icons.svg#envelope"></use>
                   </svg>info@devstudio.com
               </a>
               </li>
               <li>
-                <a class="link contact header__contact" href="tel:+380961111111"><svg width="10" height="16">
-                  <use class="icon" href="./images/icons.svg#smartphone">
-                  </use>
+                <a class="link contact header__contact" href="tel:+380961111111">
+                <svg width="10" height="16">
+                  <use class="icon" href="./images/icons.svg#smartphone"></use>
                 </svg>+38 096 111 11 11</a>
               </li>
             </ul>
         </div>
       </div>
-    </header> -->
+    </header>
     <main>
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container"> 
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <button class="button hero__button" data-modal-open type="button">
             <span class="button__text">Замовити послугу<span>
           </button>
         </div>
-      </section> -->
+      </section>
       <section class="features">
         <div class="container">
           <h2 class="visually-hidden">Особливості</h2>
@@ -120,24 +125,71 @@
           <h2 class="title title--center">Чим ми займаємося</h2>
           <ul class="list list-cards">
             <li class="development__item">
-              <img src="./images/1.jpg" alt="розробка програми" width="370" height="294" />
+              <picture>
+                <source
+                  src="./images/desktop_application.webp"
+                  srcset="
+                    ./images/desktop_application.webp    1x,
+                    ./images/desktop_application@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  src="./images/desktop_application.jpg"
+                  srcset="./images/desktop_application.jpg 1x, ./images/desktop_application@2x 2x"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/desktop_application.jpg"
+                  alt="чоловік у червоній сорочці на білому тлі"
+                  width="370px"
+                />
+              </picture>
               <div class="development__label">
                 <h3 class="development__title">Десктопні додатки</h3>
               </div>
             </li>
             <li class="development__item">
-              <img
-                src="./images/2.jpg"
-                alt="розробка дизайну для мобільних програм"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  src="./images/mobile_application.webp"
+                  srcset="./images/mobile_application.webp 1x, ./images/mobile_application@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  src="./images/mobile_application.jpg"
+                  srcset="./images/mobile_application.jpg 1x, ./images/mobile_application@2x.jpg 2x"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/mobile_application.jpg"
+                  alt="чоловік у червоній сорочці на білому тлі"
+                  width="370px"
+                />
+              </picture>
               <div class="development__label">
                 <h3 class="development__title">Мобільні додатки</h3>
               </div>
             </li>
             <li class="development__item">
-              <img src="./images/3.jpg" alt="вибір кольору до дизайну" width="370" height="294" />
+              <picture>
+                <source
+                  src="./images/design_solution.webp"
+                  srcset="./images/design_solution.webp 1x, ./images/design_solution@2x.webp 2x"
+                  sizes="(min-width: 480px) 450px, (min-width: 768px) 354px, (min-width: 1200px) 370px"
+                  type="image/webp"
+                />
+                <source
+                  src="./images/design_solution.jpg"
+                  srcset="./images/design_solution.jpg 1x, ./images/design_solution 2x"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/design_solution.jpg"
+                  alt="чоловік у червоній сорочці на білому тлі"
+                  width="370px"
+                />
+              </picture>
               <div class="development__label">
                 <h3 class="development__title">Дизайнерські рішення</h3>
               </div>
@@ -149,13 +201,25 @@
         <div class="container">
           <h2 class="title title--center">Наша команда</h2>
           <ul class="list list-cards">
-            <li class="list-cards__card list-cards__card employee__cart">
-              <img
-                src="./images/4.jpg"
-                alt="чоловік у червоній сорочці на білому тлі"
-                width="270"
-                height="260"
-              />
+            <li class="list-cards__card employee__cart">
+              <picture>
+                <source
+                  src="./images/product_designer-450.webp"
+                  srcset="./images/product_designer.webp 1x, ./images/product_designer@2x.webp 2x"
+                  sizes="(min-width: 480px) 450px, (min-width: 768px) 354px, (min-width: 1200px) 370px"
+                  type="image/webp"
+                />
+                <source
+                  src="./images/product_designer.jpg"
+                  srcset="./images/product_designer.jpg 1x, ./images/product_designer@2x.jpg 2x"
+                  sizes="(min-width: 480px) 450px, (min-width: 768px) 354px, (min-width: 1200px) 370px"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/project_designer.jpg"
+                  alt="чоловік у червоній сорочці на білому тлі"
+                />
+              </picture>
               <div class="employee__label">
                 <h3 class="employee__title">Ігор Дем'яненко</h3>
                 <span class="employee__text">Product Designer</span>
@@ -192,12 +256,27 @@
               </div>
             </li>
             <li class="list-cards__card employee__cart">
-              <img
-                src="./images/5.jpg"
-                alt="женьшина в чорний жакет на білому тлі"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  src="./images/frontend_developer.webp"
+                  srcset="
+                    ./images/frontend_developer.webp    1x,
+                    ./images/frontend_developer@2x.webp 2x
+                  "
+                  sizes="(min-width: 480px) 450px, (min-width: 768px) 354px, (min-width: 1200px) 370px"
+                  type="image/webp"
+                />
+                <source
+                  src="./images/frontend_developer.jpg"
+                  srcset="./images/frontend_developer.jpg 1x, ./images/frontend_developer@2x.jpg 2x"
+                  sizes="(min-width: 480px) 450px, (min-width: 768px) 354px, (min-width: 1200px) 370px"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/frontend_developer.jpg"
+                  alt="чоловік у червоній сорочці на білому тлі"
+                />
+              </picture>
               <div class="employee__label">
                 <h3 class="employee__title">Ольга Рєпіна</h3>
                 <span class="employee__text">Frontend Developer</span>
@@ -234,12 +313,21 @@
               </div>
             </li>
             <li class="list-cards__card employee__cart">
-              <img
-                src="./images/6.jpg"
-                alt="чоловік у синій сорочці на білому тлі"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  src="./images/marketing.webp"
+                  srcset="./images/marketing.webp 1x, ./images/marketing@2x.webp 2x"
+                  sizes="(min-width: 480px) 450px, (min-width: 768px) 354px, (min-width: 1200px) 370px"
+                  type="image/webp"
+                />
+                <source
+                  src="./images/marketing.jpg"
+                  srcset="./images/marketing.jpg 1x, ./images/marketing@2x.jpg 2x"
+                  sizes="(min-width: 480px) 450px, (min-width: 768px) 354px, (min-width: 1200px) 370px"
+                  type="image/jpeg"
+                />
+                <img src="./images/marketing.jpg" alt="чоловік у червоній сорочці на білому тлі" />
+              </picture>
               <div class="employee__label">
                 <h3 class="employee__title">Микола Тарасов</h3>
                 <span class="employee__text">Marketing</span>
@@ -276,12 +364,24 @@
               </div>
             </li>
             <li class="list-cards__card employee__cart">
-              <img
-                src="./images/7.jpg"
-                alt="чоловік у чорній футболці на даху"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  src="./images/ui_designer.webp"
+                  srcset="./images/ui_designer.webp 1x, ./images/ui_designer@2x.webp 2x"
+                  sizes="(min-width: 480px) 450px, (min-width: 768px) 354px, (min-width: 1200px) 370px"
+                  type="image/webp"
+                />
+                <source
+                  src="./images/ui_designer.jpg"
+                  srcset="./images/ui_designer.jpg 1x, ./images/ui_designer@2x.jpg 2x"
+                  sizes="(min-width: 480px) 450px, (min-width: 768px) 354px, (min-width: 1200px) 370px"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/ui_designer.jpg"
+                  alt="чоловік у червоній сорочці на білому тлі"
+                />
+              </picture>
               <div class="employee__label">
                 <h3 class="employee__title">Михайло Єрмаков</h3>
                 <span class="employee__text">UI Designe</span>
@@ -370,7 +470,7 @@
         </div>
       </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer__container">
         <div class="footer__contact">
           <a class="logo footer__logo" href="./index.html">
@@ -435,7 +535,8 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
+    <!-- modal -->
     <div class="backdoor is-hidden" data-modal>
       <div class="modal">
         <buttom class="button-close modal__button-close" type="buttom" data-modal-close>
@@ -486,10 +587,8 @@
               <use href="./images/icons.svg#check-icon"></use>
             </svg>
             <label class="modal__text" for="contract">
-              <p>
                 Погоджуюся з розсилкою та приймаю
                 <a href="" class="modal__link">Умови договору</a>
-              </p>
             </label>
           </div>
           <button type="submit" class="button modal__buttom">
@@ -498,6 +597,34 @@
         </form>
       </div>
     </div>
+    <!-- mobile-menu -->
+    <div class="mobile-menu js-menu-container">
+      <div class="container">
+        <button class="menu-button mobile-menu__button-close js-close-menu">
+          <svg class="menu-button__icon menu-button__close" width="40" height="40">
+            <use href="./images/icons.svg#close-icon"></use>
+          </svg>
+          <nav>
+            <ul class="mobile-menu__list">
+              <li><a class="link mobile-menu__link" href="">Студія</a></li>
+              <li><a class="link mobile-menu__link" href="">Портфоліо</a></li>
+              <li><a class="link mobile-menu__link" href="">Контакти</a></li>
+            </ul>
+            <ul class="list">
+              <li><a class="link mobile-menu__link" href="">+38 096 111 11 11</a></li>
+              <li><a class="link mobile-menu__link" href="">info@devstudio.com</a></li>
+            </ul>
+            <ul class="list">
+              <li><a class="link mobile-menu__link" href="">Instagram</a></li>
+              <li><a class="link mobile-menu__link" href="">Twitter</a></li>
+              <li><a class="link mobile-menu__link" href="">Facebook</a></li>
+              <li><a class="link mobile-menu__link" href="">Linkedin</a></li>
+            </ul>
+          </nav>
+        </button>
+      </div>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

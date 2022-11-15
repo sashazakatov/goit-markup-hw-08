@@ -1,0 +1,22 @@
+.menu-button{
+    display: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    &__icon{
+        transition-property: fill;
+        transition-duration: var(--animation-time);
+        transition-timing-function: var(--bezier-function);
+    }
+    &:focus &__icon,
+    &:hover &__icon{
+        fill: var(--company-color);
+    }
+    @media screen and (max-width: 767px) {
+        display: flex;  
+        justify-content: flex-end;
+    }
+}
