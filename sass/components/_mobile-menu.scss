@@ -8,7 +8,7 @@
     background-color: #fff;
     overflow: scroll;
     z-index: 999;
-    &__blok{
+    &__blok {
         margin: 40px 25px;
     }
     &.is-open{
@@ -27,7 +27,10 @@
         }
     }
     &__list-nav{
-        margin-bottom: 302px;
+        margin-bottom: 64px;
+        @media screen and (min-height: 796px){
+            margin-bottom: 302px;
+        }
     }
     &__list-item{
         &:not(:last-child){
