@@ -4,7 +4,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 200px 0;
+    padding: 118px 0;
 
     background-color: #2F303A;
     @media screen and (min-device-pixel-ratio: 2),
@@ -14,11 +14,12 @@
     }
     @media screen and (max-width: 767px) {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header-image-480.jpg");
-        padding: 118px 0;
     }
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header-image-768.jpg");
-        padding: 204px 0;
+    }
+    @media screen and (min-widht: 1200px) {
+        padding: 200px;
     }
 
     &__title{
@@ -39,6 +40,10 @@
             
         text-transform: uppercase;
 
+        @media screen and (min-width: 768px) and (max-width: 1199px){
+            margin-left: 189px;
+            margin-right: 189px;
+        }
         @media screen and (max-width: 1199px){
             font-size: 26px;
             line-height: 1.6;

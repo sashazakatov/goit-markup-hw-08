@@ -1,18 +1,26 @@
 .mobile-menu{
-    display: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
     position: fixed;
+    opacity: 0;
+    visibility: hidden;
+    transition-property: opacity;
+    transition-duration: var(--animation-time);
+    transition-timing-function: var(--bezier-function);
+
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
     background-color: #fff;
     overflow: scroll;
+    padding: 48px 40px;
     z-index: 999;
-    &__blok {
-        margin: 40px 25px;
-    }
     &.is-open{
-        display: block;
+        visibility: visible;
+        opacity: 1;
     }
     &__button-close{
         position: absolute;
@@ -23,13 +31,7 @@
         transition-timing-function: var(--bezier-function);
         &:focus,
         &:hover{
-            fill: var(--company-color);
-        }
-    }
-    &__list-nav{
-        margin-bottom: 64px;
-        @media screen and (min-height: 796px){
-            margin-bottom: 302px;
+        fill: var(--company-color);
         }
     }
     &__list-item{

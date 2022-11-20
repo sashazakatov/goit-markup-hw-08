@@ -1,9 +1,7 @@
 .clients{
-    padding-top: 94px;
-    padding-bottom: 94px;
-    @media screen and (max-width:1199px) {
-        padding-top: 60px;
-        padding-bottom: 60px;
+    padding: 60px 0;
+    @media screen and (min-width:1200px) {
+        padding: 94px 0;
     }
     &__list{
         display: flex;
@@ -15,8 +13,8 @@
         }
     }
     &__item{
-        flex-basis: 170px;
-        @media screen and (max-width: 480px) {
+        flex-basis: calc((100% - 150px) / 6);
+        @media screen and (max-width: 767px) {
             flex-basis: calc((100% - 30px)/2);
         }    
         @media screen and (min-width: 768px) and (max-width:1199px) {

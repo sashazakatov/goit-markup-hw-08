@@ -1,10 +1,8 @@
 .employee {
     background-color: #F5F4FA;
-    padding-top: 94px;
-    padding-bottom: 94px;
-    @media screen and (max-width:1199px) {
-        padding-top: 60px;
-        padding-bottom: 60px;
+    padding: 60px 0;
+    @media screen and (min-width:1200px) {
+        padding: 94px 0;
     }
 
     &__cart{
